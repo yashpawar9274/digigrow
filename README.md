@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
+# DigiGrow - Local Digital Agency Website 🚀
 
-## Project info
+DigiGrow is a modern, high-performance website designed for local digital marketing agencies in India. It helps small businesses grow their online presence with affordable services like Website Development, Google Reviews, and Social Media Marketing.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Features
 
-## How can I edit this code?
+- **Dynamic Content Management:** Fully dynamic website powered by Supabase.
+- **Admin Dashboard:** Secure admin panel to manage:
+  - **Leads:** Track and manage enquiries.
+  - **Portfolio:** Add/Edit/Delete real client projects.
+  - **Testimonials:** Manage client reviews with ratings and phone numbers.
+  - **Services:** Update service offerings and pricing.
+  - **Links:** Manage navigation and social media links.
+- **Responsive Design:** Mobile-first approach using Tailwind CSS.
+- **SEO Optimized:** Built with React Helmet Async for local SEO (Boisar, Palghar).
+- **Direct WhatsApp Integration:** Floating WhatsApp button for instant lead generation.
+- **Performance:** Fast loading with Vite and React.
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend:** React, TypeScript, Vite
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Backend/Database:** Supabase (PostgreSQL)
+- **State Management:** TanStack Query
+- **Routing:** React Router DOM
+- **Icons:** Lucide React
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or pnpm or bun
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yashpawar9274/digigrow.git
+   cd digigrow
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-Follow these steps:
+3. **Environment Setup**
+   Create a `.env` file in the root directory and add your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🗄️ Database Setup (Supabase)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Run the SQL migration scripts located in `supabase/migrations` and individual SQL files in the `supabase/` folder to set up the tables:
+- `leads`
+- `services`
+- `testimonials`
+- `portfolio`
+- `links`
+- `site_settings`
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 📱 Pages
 
-**Edit a file directly in GitHub**
+- **Home:** `/`
+- **Services:** `/services`
+- **Portfolio:** `/portfolio`
+- **Pricing:** `/pricing`
+- **Contact:** `/contact`
+- **Admin Login:** `/admin`
+- **Admin Dashboard:** `/admin/dashboard`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤝 Contact
 
-**Use GitHub Codespaces**
+**DigiGrow** - Helping Local Businesses Grow.
+- **Location:** Boisar, Palghar, Maharashtra
+- **Email:** contact@digigrow.in
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+Built with ❤️ for Local Businesses.
